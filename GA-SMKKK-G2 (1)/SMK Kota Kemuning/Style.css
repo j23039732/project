@@ -1,0 +1,378 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: publicsans;
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    background-image: url(SMKimage.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: ghostwhite;
+}
+   
+@font-face {
+    font-family: publicsans;
+    src: url(./font/PublicSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: publicsans;
+    src: url(./font/PublicSans-Bold.ttf);
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.head {
+    font-size: 30px;
+    color: ghostwhite;
+    display: table-cell;
+    padding-top: 5px;
+}
+
+.headbanner {
+    width: 100%;
+    height: 150px;
+    background-color: rebeccapurple;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-sizing:border-box;
+}
+
+
+.image {
+    width: 5%;
+    margin-right: 20px;
+}
+
+.navbar {
+    padding-left: 10rem;
+    padding-top: 13px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.headfont {
+    font-weight: bold;
+    margin: 0;
+    font-size: 30px;
+    line-height: 3;
+    padding-left: 300px;
+    padding-top: 50px;
+    color: #0072b1;
+}
+
+.headfont2 {
+    color: #0072b1;
+    font-weight: bold;
+    margin: 0;
+    font-size: 30px;
+    line-height: 3;
+    padding-left: 260px;
+    padding-top: 50px;
+}
+
+.parafont {
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding-left: 300px;
+}
+
+.missionpic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.parafont2 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #808080;
+}
+
+.song {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+}
+
+#songtitle {
+    font-size: 38px;
+    color: #0072b1;
+}
+
+.lyrics {
+    color: #616A6B;
+}
+
+.video-container {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#logoexplain {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.logo {
+    padding-top: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #616A6B;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+th, td {
+    border: 1px solid #616A6B;
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+    color: #616A6B;
+    line-height: 1.5;
+}
+
+td:nth-child(2) {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+#logotitle th {
+    text-align: center;
+    font-size: 2rem;
+    color: #0072b1;
+}
+
+#announcement {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+#calendar {
+    font-size: 38px;
+    color: #0072b1;
+}
+
+#schoolcalendar {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border: 2px solid black;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#stafftitle {
+    font-size: 38px;
+    color: #0072b1;
+}
+
+.staff {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    line-height: 1.5;
+}
+
+#staffdirectory {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border: 3px solid black;
+}
+
+#staffphoto{
+    padding-bottom: 5rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #99A3A4;
+    color: black;
+    margin-top: auto; 
+}
